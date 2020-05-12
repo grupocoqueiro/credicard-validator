@@ -1,13 +1,13 @@
 {
-  "name": "andre-vinicius/credicard-validator",
+  "name": "grupocoqueiro/credicard-validator",
   "description": "API",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "license": "proprietary",
   "authors": [
     {
-      "name": "André Vinícius Nasciemnto da Costa | TI - Grupo Coqueiro",
-      "email": "andrecosta@grupocoqueiro.com.br"
+      "name": "TI - Grupo Coqueiro",
+      "email": "informatica@grupocoqueiro.com.br"
     }
   ],
   "require": {
