@@ -21,9 +21,9 @@ class Card implements CardInterface
     private $number;
 
     /**
-     * @var int
+     * @var string
      */
-    private $cvc;
+    private $cvv;
 
     /**
      * @var string
@@ -32,11 +32,14 @@ class Card implements CardInterface
 
     /**
      * @inheritDoc
+     * @param string $number
+     * @param string $cvv
+     * @param string $date
      */
-    public function __construct(string $number, int $cvc, string $date)
+    public function __construct(string $number, string $cvv, string $date)
     {
         $this->number = $number;
-        $this->cvc = $cvc;
+        $this->cvv = $cvv;
         $this->date = $date;
     }
 
@@ -51,9 +54,9 @@ class Card implements CardInterface
     /**
      * @inheritDoc
      */
-    public function getCvc(): int
+    public function getCvv(): string
     {
-        return $this->cvc;
+        return $this->cvv;
     }
 
     /**

@@ -16,10 +16,10 @@ interface CardInterface
     /**
      * CardInterface constructor.
      * @param string $number
-     * @param int $cvc
+     * @param string $cvv
      * @param string $date
      */
-    public function __construct(string $number, int $cvc, string $date);
+    public function __construct(string $number, string $cvv, string $date);
 
     /**
      * @return string
@@ -27,9 +27,9 @@ interface CardInterface
     public function getNumber(): string;
 
     /**
-     * @return int
+     * @return string
      */
-    public function getCvc(): int;
+    public function getCvv(): string;
 
     /**
      * @return string

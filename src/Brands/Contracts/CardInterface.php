@@ -31,7 +31,7 @@ interface CardInterface
     /**
      * @return array
      */
-    public function getCVCLength(): array;
+    public function getCVVLength(): array;
 
     /**
      * @return bool

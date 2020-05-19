@@ -78,13 +78,13 @@ abstract class CrediCardValidatorAbstract implements CrediCardValidatorInterface
     }
 
     /**
-     * @param $cvc
+     * @param $cvv
      * @param array $lengths
      * @return bool
      */
-    public function isCvcValid($cvc, array $lengths): bool
+    public function isCvvValid($cvv, array $lengths): bool
     {
-        if (in_array(strlen($cvc), $lengths)) {
+        if (in_array(strlen($cvv), $lengths)) {
             return true;
         }
 

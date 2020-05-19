@@ -51,11 +51,11 @@ interface CrediCardValidatorInterface
     public function isValidLength($number, array $length): bool;
 
     /**
-     * @param $cvc
+     * @param $cvv
      * @param array $lengths
      * @return bool
      */
-    public function isCvcValid($cvc, array $lengths): bool;
+    public function isCvvValid($cvv, array $lengths): bool;
 
     /**
      * @param $year

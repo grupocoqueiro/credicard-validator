@@ -42,7 +42,7 @@ class DinersClub extends AbstractCard
     /**
      * @inheritDoc
      */
-    public function getCVCLength(): array
+    public function getCVVLength(): array
     {
         return array(3);
     }

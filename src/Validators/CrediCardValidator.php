@@ -48,7 +48,7 @@ class CrediCardValidator extends CrediCardValidatorAbstract
 
             if(
                 $this->isNumberValid($brandObject->getPattern(), $this->getCard()->getNumber()) &&
-                $this->isCvcValid($this->getCard()->getCvc(), $brandObject->getCVCLength()) &&
+                $this->isCvvValid($this->getCard()->getCvv(), $brandObject->getCVVLength()) &&
                 $this->isValidLength($this->getCard()->getNumber(), $brandObject->getLenght()) &&
                 ($brandObject->isLuhn() && $this->isValidLuhn($this->getCard()->getNumber()))
             ) {
